@@ -1,15 +1,7 @@
 body{
-    background-color: #E0E0E2;
+    background-color: #F3C623;
     text-align: center;
 
-}
-h1, h2{
-    color:#721817 ;
-}
-
-h2 span{
-    color:#FA9F42 ;
-    font-size: 0.75em;
 }
 
 #logo{
@@ -19,7 +11,57 @@ h2 span{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    margin-bottom: 50px;
 }
+
+.container {
+  max-width: 1000px;     
+  margin: 0 auto;        
+  padding: 0 20px;        
+  box-sizing: border-box;
+}
+
+.card-grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+@media(max-width:750px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FEF3E2;
+    border-radius: 20px;
+}
+
+.image-cont{
+    width: 100%;
+    height: auto;
+}
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+.item-desc{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.item-desc h2{
+    color: #ff6600;
+}
+
+
 
 #copyright{
     padding-top: 12px;

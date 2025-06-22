@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Little Lemon</title>
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+  <video width="auto" height="240" autoplay muted loop>
+    <source src="../videos/2620043-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <form action="">
+    <div>
+      <label for="rating">Rating:</label>
+      <input type="range" id="rating" name="rating" min="1" max="5" list="ratings">
+      <datalist id="ratings">
+        <option value="1" label="0"></option>
+        <option value="2" label="2"></option>
+        <option value="3" label="3"></option>
+        <option value="4" label="4"></option>
+        <option value="5" label="5"></option>
+      </datalist>
+    </div>
+  </form>
+</body>
+</html>

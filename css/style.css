@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4e299;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  background: #f4e299;
+  color: #fff;
+  text-align: center;
+  padding: 2vh 1vw;
+}
+
+#Header_logo {
+  width: 45vw;
+  max-width: 500px;
+  height: auto;
+  margin-right: 1vw;
+  background: none;
+}
+
+nav {
+  background-color: #333;
+  border-radius: 10px;
+  margin: 1vh auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1vh 1vw;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 2vw;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #f4e299;
+  text-decoration: underline;
+}
+
+aside {
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 2vh 1vw;
+  background: none; 
+  z-index: 1;
+}
+aside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://fitmencook.com/wp-content/uploads/2023/03/one-pot-lemon-shrimp-pasta-2.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  z-index: -1;
+}
+aside h1{
+  color: #ffffff;
+  font-weight: 900;
+  padding: 1vh 1vw;
+}
+aside p {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1vh 1vw;
+}
+main{
+  display: flex;
+  margin: 1rem;
+  justify-content:space-around;
+  max-width: 1200px;
+  margin: 1rem auto;
+  align-items: stretch;
+}
+article {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto; 
+  max-width: 350px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 130, 4);
+  text-align: left;
+  border-radius: 30px;
+  min-height: 500px;
+}
+
+
+.article-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+article p {
+  font-size: 0.9rem;
+  color: #e8e0e0;
+}
+article h2 {
+  color: #f9f9f9;
+  margin-bottom: 0.5rem;
+}
+article a {
+  margin-top: auto;
+  font-weight: bold;
+}
+article span {
+  font-weight: bold;
+}
+article a:hover {
+  color: #f4e299;
+  text-decoration: underline;
+}
+
+footer {
+  
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12vw;
+  margin-top: 50px;
+}
+
+#footer_logo {
+  width: 3vw;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.footer-links {
+  border-top: 1px solid #2f2f2f;
+  text-align: right;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 90%;
+    max-width: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1vh 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2vw;
+  }
+
+  #footer_logo {
+    width: 20vw;
+  }
+
+  .footer-links {
+    width: 100%;
+    text-align: center;
+  }
+}

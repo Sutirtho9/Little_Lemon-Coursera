@@ -1,66 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Little Lemon</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div>
-        <img src="images/logo.png" id="logo">
-    </div>
+    <header>
+        <img src="/images/Header_logo.png" id="Header_logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="pages/booking.html">Book</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h1>30% Off This Weekend</h1>
+        <p>Experience the vibrant flavors of the Mediterranean with an exclusive 30% discount this weekend! 
+            From handcrafted mezze to sizzling grilled specialties, indulge in sun-kissed dishes made with love and fresh, 
+            locally-sourced ingredients. Available for dine-in and takeaway—Friday to Sunday only!</p>
+    </aside>
+
+    <main>
+        <article class="menu">
+            <h2>🫒 Our New Menu</h2>
+            <img src="/images/Menu-image.avif" class="article-image" alt="Menu Image">
+            <p>Discover the rich, wholesome flavors of the Mediterranean with our updated menu! Savor traditional dishes like falafel, shawarma, lemon herb chicken, and creamy tzatziki, all crafted with olive oil, fresh herbs, and love. 
+                Whether you're craving a light mezze platter or a hearty tagine, there's something for every appetite. Vegan, vegetarian, and gluten-free options available!</p>
+            <a href="#Menu">See our new menu</a>
+        </article>
+        <article class="booking">
+            <h2>🍷 Book a Table</h2>
+            <img src="/images/Dining image.jpg" class="article-image" alt="Dining Image">
+            <p>Step into our cozy, olive grove-inspired dining room and let the aromas of freshly baked pita and grilled delicacies transport you to the shores of the Mediterranean. 
+                Whether it’s a romantic evening, a family gathering, or a casual lunch, reserve your table to enjoy an unforgettable experience. 
+                Online reservations are quick and easy!</p>
+                <a href="#">Book your table now</a>
+        </article>
+        <article class="Details">
+            <h2>🕰️ Opening Hours</h2>
+            <img src="/images/detail-image.avif" class="article-image" alt="Details Image">
+            <p>Come enjoy the warmth of Mediterranean hospitality, seven days a week: <br> <br>
+                <span>Monday to Friday: 12:00 PM – 10:00 PM</span><br>
+                <span>Saturday & Sunday: 11:00 AM – 11:00 PM</span><br><br>
+Join us for lunch, dinner, or a relaxing glass of wine. We’re here to bring a slice of the Mediterranean to your plate—any day of the week.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="logo-cont">
+            <img src="/images/little-logo.png" id="footer_logo" alt="Footer Logo">
+        </div>
+
+        <div class="footer-links">
+            Copyright &copy; Little Lemon. All rights reserved.
+        </div>
+    </footer>
     
-    <div class="container">
-
-        <div class="card-grid">
-            
-            <div class="card">
-                <div class="image-cont">
-                    <img src="images/pasta.jpg" alt="falafel photo" class="image">
-                </div>
-                <div class="item-desc">
-                    <h2>Pasta Salad <span>New</span></h2>
-                    <p>Lettuce, Vegetables and Mozzarella</p>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="image-cont">
-                    <img src="images/Calamari.webp" alt="falafel photo" class="image">
-                </div>
-                <div class="item-desc">
-                    <h2>Fired Calamari</h2>
-                    <p>Squid, Buttermilk</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="image-cont">
-                    <img src="images/fish and chips.jpg" alt="falafel photo" class="image">
-                </div>
-                <div class="item-desc">
-                    <h2>Fish and Chips</h2>
-                    <p>Cod, Patatoes</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="image-cont">
-                    <img src="images/falafel.jpg" alt="falafel photo" class="image">
-                </div>
-                <div class="item-desc">
-                    <h2>Falafel</h2>
-                    <p>Chickpeas, Herbs and Spices</p>
-                </div>
-            </div>
-        </div>
-        <div class="center-text">
-            <p id="copyright">
-                Copyright Little Lemon
-            </p>
-        </div>
-    </div>
 </body>
 </html>

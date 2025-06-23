@@ -6,14 +6,14 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4e299;
+  background: hwb(48 60% 2%);
   color: #333;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 header {
-  background: #f4e299;
+  background: hwb(48 60% 4%);
   color: #fff;
   text-align: center;
   padding: 2vh 1vw;
@@ -67,6 +67,7 @@ aside {
   padding: 2vh 1vw;
   background: none; 
   z-index: 1;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
 aside::before {
   content: "";
@@ -78,13 +79,14 @@ aside::before {
   background-image: url('https://fitmencook.com/wp-content/uploads/2023/03/one-pot-lemon-shrimp-pasta-2.jpg');
   background-size: cover;
   background-position: center;
-  
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
   z-index: -1;
 }
 aside h1{
   color: #ffffff;
   font-weight: 900;
   padding: 1vh 1vw;
+
 }
 aside p {
   color: #ffffff;
@@ -92,23 +94,24 @@ aside p {
   padding: 1vh 1vw;
 }
 main{
-  display: flex;
-  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  gap: 2rem;
+  margin: 2vh auto;
   justify-content:space-around;
   max-width: 1200px;
-  margin: 1rem auto;
   align-items: stretch;
 }
 article {
   display: grid;
   grid-template-rows: auto 1fr 1fr auto; 
-  max-width: 350px;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: rgb(255, 130, 4);
+  padding: 1.5rem;
+  background-color: hsl(30, 100%, 61%);
   text-align: left;
   border-radius: 30px;
   min-height: 500px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 
@@ -118,7 +121,7 @@ article {
   margin: 1rem 0;
 }
 article p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #e8e0e0;
 }
 article h2 {
@@ -136,6 +139,8 @@ article a:hover {
   color: #f4e299;
   text-decoration: underline;
 }
+
+
 
 footer {
   

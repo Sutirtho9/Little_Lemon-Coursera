@@ -98,7 +98,7 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
   gap: 2rem;
-  margin: 2vh auto;
+  margin: 8vh auto;
   justify-content:space-around;
   max-width: 1200px;
   align-items: stretch;

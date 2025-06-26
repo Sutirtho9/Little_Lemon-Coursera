@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Little Lemon</title>
-
-  <meta property="og:title" content="Our Menu">
-  <meta property="og:type"  content="website">
-  <meta property="og:image" content="logo.png">
-  <meta property="og:url"   content="https://littlelemon/">
-  <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Little Lemon">
-
-  <link rel="stylesheet" href="../css/booking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="icon" type="image/png" href="/images/little-logo.png">
 </head>
 <body>
-  <header>
-    <img src="../images/logo.png" id="logo">
-  </header>
-  <main>
-    <form >
+    <header>
+        <img src="/images/Header_logo.png" id="Header_logo">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="/pages/booking.html">Book</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
-      <div>
-        <label for="user_mail">Email Address</label>
-        <input type="email" name="user_mail" id="user_mail">
-      </div>
-      <label for="booking_date">Booking Date</label>
-      <input type="date" name="booking_date" id="booking_date">
-      <div>
-        <label for="number_of_people">Number of people</label>
-        <input type="number" name="number_of_people" id="number_of_people" min="1" max="8"></input>
-      </div>
-      
-      <div>
-        <input type="checkbox"></input>
-        <label>I agree to the cancellation policy</label>
-      </div>
+        <aside class="promotional-left">
+        </aside>
+        <form>
+            <div class="form-name">
+                <label for="user_name">Full Name</label> <br>
+                <input type="text" name="user_name" id="user_name">
+            </div>
 
-      <div>
-        <button>Book Now</button>
-      </div>
-      
-      <div>
-        
-      </div>
-    </form>
-      
+            <div class="form-email">
+                <label for="user_mail">Email Address</label> <br>
+                <input type="email" name="user_mail" id="user_mail">
+            </div>
+
+            <div class="form-phone">
+                <div>
+                    <label for="user_number">Phone Number</label> 
+                    <input type="tel" name="user_number" id="user_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    
+                </div>
+                <div>
+                    <label for="booking_date">Booking Date</label> 
+                    <input type="date" name="booking_date" id="booking_date">
+                </div>
+            </div>
+
+            <div class="form-booking">
+                <div>
+                    <label for="booking_time">Booking Time</label> 
+                    <select name="booking_time" id="booking_time">
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <label for="number_of_people">Number of Guests</label> <br>
+                    <input type="number" name="number_of_people" id="number_of_people" min="1" max="8" value="1" ></input>
+                </div>
+            </div>
+
+            <div class="form-requests">
+                <label for="requests">Special requests (optional)</label> <br>
+                <textarea name="requests" id="requests" rows="4"></textarea>
+            </div>
+            <div class="form-policy">
+                <input type="checkbox"></input>
+                <label>I agree to the cancellation policy</label>
+            </div>
+
+            <div class="form-submit">
+                <button>Book Now</button>
+            </div>
+
+            <div class="form-contact">
+                <p>Prefer to call us Instead? Reach us at <br>
+                +1 9211 420 420 or email us at <a href="mailto:reservations@littlelemon.com">reservations@littlelemon.com</a></p>
+            </div>
+        </form>
+        <aside class="promotional-right">
+        </aside>
     </main>
-  </body>
+    <footer>
+            <div class="logo-cont">
+                <img src="/images/little-logo.png" id="footer_logo" alt="Footer Logo">
+            </div>
+    
+            <div class="footer-links">
+                Copyright &copy; Little Lemon. All rights reserved.
+            </div>
+        </footer>
+               
+            </section>
+
+</body>
 
 </html>

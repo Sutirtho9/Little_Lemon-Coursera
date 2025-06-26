@@ -107,8 +107,8 @@ main h1{
     border-radius: 10px;
     margin: 1vh;
     padding: 1vh;
-    display: block;             /* Ensures image is treated as a block */
-    object-fit: cover;          /* Keeps image aspect ratio */
+    display: block;             
+    object-fit: cover;          
 }
 
 .menu-description  h2{
